@@ -1,5 +1,6 @@
 # GifCropper
-A simple application that crops a given gif file or folder containing gifs.
+
+A simple application that crops the empty space of a given gif file or folder containing gifs.
 
 ## Usage
 
@@ -12,3 +13,9 @@ A simple application that crops a given gif file or folder containing gifs.
 
 * Install the [.NET 5 SDK](https://dotnet.microsoft.com/download/visual-studio-sdks)
 * Use: `dotnet build src`
+
+## Example
+
+| Not Cropped | Cropped |
+|---|---|
+| ![Not Cropped Bulbasaur](img/1-front-not-cropped.gif) | ![Cropped Bulbasaur](img/1-front-cropped.gif) |
