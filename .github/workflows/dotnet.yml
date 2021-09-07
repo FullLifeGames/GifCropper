@@ -20,9 +20,10 @@ jobs:
     - name: Restore dependencies
       run: dotnet restore src
     - name: Build
-      run: dotnet build src --no-restore
+      run: dotnet build src --configuration Release --no-restore
     - name: Test
       run: dotnet test src --no-build --verbosity normal
     - name: Upload a Build Artifact
       uses: actions/upload-artifact@v2.2.4
-      
+      with:
+        path: src/GifCropper/bin/Release/net5.0/
